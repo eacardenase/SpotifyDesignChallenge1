@@ -8,22 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		20D5CF7029CCDE3B0026D2AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CF6F29CCDE3B0026D2AF /* AppDelegate.swift */; };
-		20D5CF7229CCDE3B0026D2AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CF7129CCDE3B0026D2AF /* SceneDelegate.swift */; };
 		20D5CF7429CCDE3B0026D2AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CF7329CCDE3B0026D2AF /* ViewController.swift */; };
-		20D5CF7729CCDE3B0026D2AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D5CF7529CCDE3B0026D2AF /* Main.storyboard */; };
 		20D5CF7929CCDE3C0026D2AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D5CF7829CCDE3C0026D2AF /* Assets.xcassets */; };
 		20D5CF7C29CCDE3C0026D2AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D5CF7A29CCDE3C0026D2AF /* LaunchScreen.storyboard */; };
+		20D5CF8629CCE0110026D2AF /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CF8529CCE0110026D2AF /* UIColor+Utils.swift */; };
+		20D5CF8829CCE1790026D2AF /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CF8729CCE1790026D2AF /* Factories.swift */; };
+		20D5CF8A29CCF0BA0026D2AF /* NSLayoutConstraint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CF8929CCF0BA0026D2AF /* NSLayoutConstraint+Utils.swift */; };
+		20D5CF8C29CCF0D90026D2AF /* UINavigationController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5CF8B29CCF0D90026D2AF /* UINavigationController+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		20D5CF6C29CCDE3B0026D2AF /* SpotifyDesignChallenge1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyDesignChallenge1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D5CF6F29CCDE3B0026D2AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20D5CF7129CCDE3B0026D2AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		20D5CF7329CCDE3B0026D2AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		20D5CF7629CCDE3B0026D2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20D5CF7829CCDE3C0026D2AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20D5CF7B29CCDE3C0026D2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20D5CF7D29CCDE3C0026D2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D5CF8529CCE0110026D2AF /* UIColor+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		20D5CF8729CCE1790026D2AF /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
+		20D5CF8929CCF0BA0026D2AF /* NSLayoutConstraint+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Utils.swift"; sourceTree = "<group>"; };
+		20D5CF8B29CCF0D90026D2AF /* UINavigationController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Utils.swift"; sourceTree = "<group>"; };
+		20D5CF8D29CCF1000026D2AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +45,7 @@
 		20D5CF6329CCDE3B0026D2AF = {
 			isa = PBXGroup;
 			children = (
+				20D5CF8D29CCF1000026D2AF /* README.md */,
 				20D5CF6E29CCDE3B0026D2AF /* SpotifyDesignChallenge1 */,
 				20D5CF6D29CCDE3B0026D2AF /* Products */,
 			);
@@ -57,14 +63,32 @@
 			isa = PBXGroup;
 			children = (
 				20D5CF6F29CCDE3B0026D2AF /* AppDelegate.swift */,
-				20D5CF7129CCDE3B0026D2AF /* SceneDelegate.swift */,
 				20D5CF7329CCDE3B0026D2AF /* ViewController.swift */,
-				20D5CF7529CCDE3B0026D2AF /* Main.storyboard */,
+				20D5CF8329CCDF920026D2AF /* Utils */,
+				20D5CF8429CCDF9E0026D2AF /* Files */,
+			);
+			path = SpotifyDesignChallenge1;
+			sourceTree = "<group>";
+		};
+		20D5CF8329CCDF920026D2AF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				20D5CF8529CCE0110026D2AF /* UIColor+Utils.swift */,
+				20D5CF8729CCE1790026D2AF /* Factories.swift */,
+				20D5CF8929CCF0BA0026D2AF /* NSLayoutConstraint+Utils.swift */,
+				20D5CF8B29CCF0D90026D2AF /* UINavigationController+Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		20D5CF8429CCDF9E0026D2AF /* Files */ = {
+			isa = PBXGroup;
+			children = (
 				20D5CF7829CCDE3C0026D2AF /* Assets.xcassets */,
 				20D5CF7A29CCDE3C0026D2AF /* LaunchScreen.storyboard */,
 				20D5CF7D29CCDE3C0026D2AF /* Info.plist */,
 			);
-			path = SpotifyDesignChallenge1;
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +151,6 @@
 			files = (
 				20D5CF7C29CCDE3C0026D2AF /* LaunchScreen.storyboard in Resources */,
 				20D5CF7929CCDE3C0026D2AF /* Assets.xcassets in Resources */,
-				20D5CF7729CCDE3B0026D2AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +161,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D5CF8A29CCF0BA0026D2AF /* NSLayoutConstraint+Utils.swift in Sources */,
+				20D5CF8629CCE0110026D2AF /* UIColor+Utils.swift in Sources */,
 				20D5CF7429CCDE3B0026D2AF /* ViewController.swift in Sources */,
+				20D5CF8829CCE1790026D2AF /* Factories.swift in Sources */,
 				20D5CF7029CCDE3B0026D2AF /* AppDelegate.swift in Sources */,
-				20D5CF7229CCDE3B0026D2AF /* SceneDelegate.swift in Sources */,
+				20D5CF8C29CCF0D90026D2AF /* UINavigationController+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		20D5CF7529CCDE3B0026D2AF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				20D5CF7629CCDE3B0026D2AF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		20D5CF7A29CCDE3C0026D2AF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +310,8 @@
 				INFOPLIST_FILE = SpotifyDesignChallenge1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +319,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eacardenase.SpotifyDesignChallenge1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +340,8 @@
 				INFOPLIST_FILE = SpotifyDesignChallenge1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +349,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eacardenase.SpotifyDesignChallenge1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
